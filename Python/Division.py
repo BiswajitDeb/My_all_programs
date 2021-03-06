@@ -1,0 +1,5 @@
+a=float(input())
+b=float(input())
+intdiv=int(a/b)
+floatdiv=float(a/b)
+print(intdiv,floatdiv, sep='\n')
