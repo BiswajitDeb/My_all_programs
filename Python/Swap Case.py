@@ -1,6 +1,6 @@
 def swap_case(s):
 
-    temp = []
+    k = []
     l = list(s)
 
     for i in l:
@@ -10,12 +10,12 @@ def swap_case(s):
         elif i.isupper():
             j = i.lower()
         else:
-            temp.append(i)
-        temp.append(j)
+            k.append(i)
+        k.append(j)
     
-    r = ''.join(temp)
+    final = ''.join(k)
     
-    return r
+    return final
 
 if __name__ == '__main__':
     s = input()
