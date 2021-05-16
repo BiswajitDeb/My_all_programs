@@ -9,7 +9,7 @@ int main()
     printf("Enter the interest rate : ");
     scanf("%f",&r);
     printf("Enter the format of time period of copounding : \n Type 1 for years and 2 for months : ");
-    scanf("%s",&c);
+    scanf("%d",&c);
     if (c==1)
         {
         n=1;
