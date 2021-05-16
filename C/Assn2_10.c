@@ -15,7 +15,7 @@ int main()
             a=a-arr[i];
         }
     }
-     printf("You will get %d note(s) of Rs500 \n %d note(s) of Rs100 \n %d note(s) of Rs50 \n %d note(s) of Rs20 \n %d note(s) of Rs10 \n %d note(s) of Rs5 \n %d coiin(s) of Rs2 \n %d coin(s) of Rs1",m[0],m[1],m[2],m[3],m[4],m[5],m[6],m[7]);
+     printf("You will get : \n %d note(s) of Rs500 \n %d note(s) of Rs100 \n %d note(s) of Rs50 \n %d note(s) of Rs20 \n %d note(s) of Rs10 \n %d note(s) of Rs5 \n %d coiin(s) of Rs2 \n %d coin(s) of Rs1",m[0],m[1],m[2],m[3],m[4],m[5],m[6],m[7]);
     
     return 0;
 }

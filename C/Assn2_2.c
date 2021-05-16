@@ -7,6 +7,6 @@ int main()
     a = a+b;
     b = a-b;
     a = a-b;
-    printf("%d %d" , a ,b );
+    printf("The swapped values are : %d %d" , a ,b );
     return 0;
 }
