@@ -3,7 +3,7 @@ int main()
 {
 int n ,sum=0;
 
-    printf("Enter the ending number : ");
+    printf("Enter the number of even integers you want to print : ");
     scanf("%d",&n);
     printf("The numbers are : \n");
     for (int i=1;i<=2*n;i++)
