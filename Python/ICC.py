@@ -1,0 +1,5 @@
+n=int(input())
+listA = list(map(int,input()))
+print("Given List:\n",listA)
+res = max(set(listA), key = listA.count)
+print("Element with highest frequency:\n",res)
