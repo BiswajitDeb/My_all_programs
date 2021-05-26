@@ -6,7 +6,7 @@ int n ,sum=0;
     printf("Enter the ending number : ");
     scanf("%d",&n);
     printf("The numbers are : \n");
-    for (int i=1;i<=n;i++)
+    for (int i=1;i<=2*n;i++)
     {
         if(i%2==0)  {printf("%d\n",i);sum=sum+i;}
         
