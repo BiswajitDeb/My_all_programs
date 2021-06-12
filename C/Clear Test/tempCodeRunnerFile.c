@@ -1,1 +1,1 @@
-g
+scanf("%c",&condition);
