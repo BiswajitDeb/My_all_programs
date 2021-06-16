@@ -12,9 +12,6 @@ def fact(f):
        m=m*i
     return m
 
-
-
-
 for j in l:
     if j <=20 and j>=1:
         print(fact(j))

@@ -1,4 +1,5 @@
 l=[]
+l2=[]
 n=int(input("Enter the numer of element you want to store in the queue :"))
 print("Enter the numbers for the queue :")
 for i in range(n):
@@ -7,10 +8,11 @@ for i in range(n):
 def insert():
 	print("enter the number")
 	t=int(input())
-	l.append(t)
+	l.insert(0,t)
 def delete():
-	#l.pop()
-    del(l[0])
+	l.pop()
+    
+    #del(l[0])
 def display():
 		print(l)
 

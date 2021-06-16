@@ -4,6 +4,6 @@ int main()
     char ch;
     printf("Enter an element : ");  
     scanf("%c",&ch);
-    printf("\nThe ascii value of the ch variable is : %d", ch);  
+    printf("\nThe ASCII value of %c is : %d",ch,ch);  
     return 0;  
 }  

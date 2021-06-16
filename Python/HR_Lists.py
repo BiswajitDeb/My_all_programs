@@ -1,0 +1,15 @@
+n=int(input())
+l=[]
+if(n==1):
+    l.insert(0,5)
+    l.insert(1,10)
+    l.insert(0,6)
+print(l)
+l.remove(6)
+l.append(9)
+l.append(1)
+l.sort()
+print(l)
+l.pop()
+l.reverse()
+print(l)
