@@ -1,1 +1,1 @@
-scanf("%c",&condition);
+result
