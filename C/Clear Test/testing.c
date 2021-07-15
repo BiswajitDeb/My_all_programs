@@ -1,8 +1,9 @@
 #include <stdio.h>
-void main()
+int main()
 {
-  int k = 0;
-
-  for (k < 3; k++)
-        printf("Hello");
+ int i=0;
+ while ( +(+i--) != 0)
+ i-=i++;
+ printf("%d",i);
+ return 0;
 }
