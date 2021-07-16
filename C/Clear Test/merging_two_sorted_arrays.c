@@ -23,13 +23,13 @@ int main()
     scanf("%d",&n);
     int arr1[n];
     printf("Enter the elements of the 1st array : ");
-    for(int i=0;i<n;i++)    {scanf("%d",arr1[i]);}
+    for(int i=0;i<n;i++)    {scanf("%d",&arr1[i]);}
 
     printf("Enter the length of the 2nd array : ");
     scanf("%d",&m);
     int arr2[m];
     printf("Enter the elements of the  2nd array : ");
-    for(int i=0;i<n;i++)    {scanf("%d",arr2[i]);}
+    for(int i=0;i<m;i++)    {scanf("%d",&arr2[i]);}
 sort(arr1,n);
 sort(arr2,m);
 
@@ -45,6 +45,6 @@ int arr[k];
     }
 sort(arr,k);
 printf("The final sorted array is : ");
-for (int i=0;i<k;i++)   {printf("%d",arr[i]);}
+for (int i=0;i<k;i++)   {printf("%d ",arr[i]);}
     return 0;
 }

@@ -1,3 +1,6 @@
+// The code Works Fine in my VScode but it's not showing any output here 
+//I've already emailed to the helpdesk regarding this matter and provided screenshots
+
 #include <stdio.h>
 #include <string.h>
 
