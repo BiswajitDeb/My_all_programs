@@ -1,9 +1,7 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
- int i=0;
- while ( +(+i--) != 0)
- i-=i++;
- printf("%d",i);
- return 0;
+    for(int i=0; i>=0;i++)
+        {printf("Hello");}
+    return 0;
 }
