@@ -1,5 +1,5 @@
 // The code Works Fine in my VScode but it's not showing any output here 
-//I've already emailed to the helpdesk regarding this matter and provided screenshots
+// I've already emailed to the helpdesk regarding this matter and provided screenshots
 
 #include <stdio.h>
 #include <string.h>
@@ -10,12 +10,12 @@ int sort(char str[],int n)
       {
         for (int j = i+1; j < n; j++)
             {
-                if (str[i] > str[j])
-                    {
-                        int temp  = str[i];
+                  if (str[i] > str[j])
+                     {
+                        int temp = str[i];
                         str[i] = str[j];
                         str[j] = temp;
-                    }
+                     }
             }
       }
 }
