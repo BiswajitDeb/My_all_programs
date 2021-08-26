@@ -11,7 +11,7 @@ int sort(char str[],int n)
         for (int j = i+1; j < n; j++)
             {
                   if (str[i] > str[j])
-                     {
+                     {  
                         int temp = str[i];
                         str[i] = str[j];
                         str[j] = temp;
