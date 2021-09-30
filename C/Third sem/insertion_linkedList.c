@@ -14,7 +14,6 @@ typedef struct block{
 
 //     head = (struct Node *)malloc(sizeof(struct Node));
 
-//     // Terminate if memory not allocated
 //     if(head == NULL)
 //     {
 //         printf("Unable to allocate memory.");
@@ -25,8 +24,8 @@ typedef struct block{
 //     printf("Enter the data of Node 1: ");
 //     scanf("%d", &data);
 
-//     head->data = data; // Link data field with data
-//     head->next = NULL; // Link address field to NULL
+//     head->data = data; 
+//     head->next = NULL; 
 
 //     // Create n - 1 Nodes and add to list
 //     temp = head;
@@ -44,11 +43,11 @@ typedef struct block{
 //         printf("Enter the data of Node %d: ", i);
 //         scanf("%d", &data);
 
-//         newNode->data = data; // Link data field of newNode
-//         newNode->next = NULL; // Make sure new Node points to NULL 
+//         newNode->data = data; 
+//         newNode->next = NULL; 
 
-//         temp->next = newNode; // Link previous Node with newNode
-//         temp = temp->next;    // Make current Node as previous Node
+//         temp->next = newNode;
+//         temp = temp->next;    
 //     }
 // }
 
