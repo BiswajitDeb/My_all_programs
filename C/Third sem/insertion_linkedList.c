@@ -7,50 +7,14 @@ typedef struct block{
 }Node;
 
 
-// void createList(int n)
-// {
-//     struct Node *newNode, *temp;
-//     int data, i;
-
-//     head = (struct Node *)malloc(sizeof(struct Node));
-
-//     if(head == NULL)
-//     {
-//         printf("Unable to allocate memory.");
-//         exit(0);
-//     }
-
-//     // Input data of Node from the user
-//     printf("Enter the data of Node 1: ");
-//     scanf("%d", &data);
-
-//     head->data = data; 
-//     head->next = NULL; 
-
-//     // Create n - 1 Nodes and add to list
-//     temp = head;
-//     for(i=2; i<=n; i++)
-//     {
-//         newNode = (struct Node *)malloc(sizeof(struct Node));
-
-//         /* If memory is not allocated for newNode */
-//         if(newNode == NULL)
-//         {
-//             printf("Unable to allocate memory.");
-//             break;
-//         }
-
-//         printf("Enter the data of Node %d: ", i);
-//         scanf("%d", &data);
-
-//         newNode->data = data; 
-//         newNode->next = NULL; 
-
-//         temp->next = newNode;
-//         temp = temp->next;    
-//     }
-// }
-
+void addbeg(Node** h,int z)
+{
+    Node*t;
+    t=(Node*)malloc(sizeof(Node));
+    t->data=z;
+    t->next=*h;
+    *h=t;
+}
 
 
 
@@ -116,12 +80,13 @@ int main()
     // scanf("%d",&n);
     // createList(n);
     // head=createlinkedlist(n);
-    while(option!=4)
+    while(option!=5)
     {
         printf("1. Append value\n");
         printf("2. Insert value\n");
         printf("3. Display the Linked-list\n");
-        printf("4. Break\n");
+        printf("4. Add value in the beginning\n");
+        printf("5. Break\n");
         printf("Choose an option: ");
         scanf("%d", &option);
         switch(option)
@@ -146,6 +111,11 @@ int main()
                 display(head);
                 break;
             case 4:
+                printf("Enter data: ");
+                scanf("%d", &data);
+                addbeg(&head,data);
+                break;
+            case 5:
                 break;
             default:
                 printf(" option\n");
