@@ -20,7 +20,7 @@ int search(int a[], int bottom, int top, int search_element)
 int main() 
 {
 	int i, num;
-	int search_element, pos;
+	int search_element, position;
 		
 	printf("\nEnter total elements : ");
 	scanf("%d", &num);
@@ -40,11 +40,11 @@ int main()
  
 	printf("\nEnter an element to search : ");
 	scanf("%d", &search_element);
-	pos = search(&arr[0], 0, num, search_element);
+	position = search(&arr[0], 0, num, search_element);
 
-	if (pos == -1)
+	if (position == -1)
 		printf("\nElement %d not found in the array \n", search_element);
 	else
-		printf("\nElement %d found at position %d in the array \n", search_element, pos);
+		printf("\nElement %d found at positionition %d in the array \n", search_element, position);
 	return 0;
 }
