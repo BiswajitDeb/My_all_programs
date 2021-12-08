@@ -1,3 +1,5 @@
-void postfix_evaluation();
-void push(int );
-int pop();
+    printf("The sorted array is : ");
+    for(int i=0;i<n;i++)
+    {
+        printf("%d ",arr[i]);
+    }
