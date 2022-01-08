@@ -8,9 +8,9 @@ void display();
 int main()
 {
     int ch;
-    printf("\n1. Enqueue or Insert");
-    printf("\n2. Dequeue or Delete");
-    printf("\n3. display");
+    printf("\n1. Enqueue");
+    printf("\n2. Dequeue");
+    printf("\n3. Display");
     printf("\n4. Break");
     while (1)
     {
