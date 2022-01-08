@@ -7,7 +7,7 @@ struct node {
 	struct node* right;
 };
 
-struct node* newNode(int data)
+struct node* CreateNode(int data)
 {
 	struct node* node = (struct node*)malloc(sizeof(struct node));
 	node->data = data;
@@ -17,31 +17,31 @@ struct node* newNode(int data)
 	return (node);
 }
 
-void printPostorder(struct node* node)
+void PostOrderr(struct node* node)
 {
 	if (node == NULL)
 		return;
-	printPostorder(node->left);
-	printPostorder(node->right);
+	PostOrderr(node->left);
+	PostOrderr(node->right);
 	printf("%d ", node->data);
 }
 
-void printInorder(struct node* node)
+void InOrder(struct node* node)
 {
 	if (node == NULL)
 		return;
-	printInorder(node->left);
+	InOrder(node->left);
 	printf("%d ", node->data);
-	printInorder(node->right);
+	InOrder(node->right);
 }
 
-void printPreorder(struct node* node)
+void  PreOrder(struct node* node)
 {
 	if (node == NULL)
 		return;
 	printf("%d ", node->data);
-	printPreorder(node->left);
-	printPreorder(node->right);
+	 PreOrder(node->left);
+	 PreOrder(node->right);
 }
 
 int main()
@@ -52,20 +52,20 @@ int main()
 	{
 		scanf("%d",&arr[i]);
 	}
-	struct node* root = newNode(arr[0]);
-	root->left = newNode(arr[1]);
-	root->right = newNode(arr[2]);
-	root->left->left = newNode(arr[3]);
-	root->left->right = newNode(arr[4]);
+	struct node* root = CreateNode(arr[0]);
+	root->left = CreateNode(arr[1]);
+	root->right = CreateNode(arr[2]);
+	root->left->left = CreateNode(arr[3]);
+	root->left->right = CreateNode(arr[4]);
 
 	printf("\nPreorder traversal of the BST is : ");
-	printPreorder(root);
+	 PreOrder(root);
 
 	printf("\n\nInorder traversal of BST is : ");
-	printInorder(root);
+	InOrder(root);
 
 	printf("\n\nPostorder traversal of BST is : ");
-	printPostorder(root);
+	PostOrderr(root);
 	printf("\n");
 	return 0;
 }
