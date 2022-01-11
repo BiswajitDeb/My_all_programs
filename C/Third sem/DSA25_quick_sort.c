@@ -1,7 +1,7 @@
 #include <stdio.h>
 void quick_sort(int[], int, int);
 int main()
-{
+{5
     int S, i;
     printf("Enter array size : ");
     scanf("%d", &S);
